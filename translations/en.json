@@ -1,0 +1,82 @@
+{
+  "language_prompt": "Please choose your language:",
+  "btn_lang_en": "🇺🇸 English",
+  "btn_lang_fa": "🇮🇷 فارسی",
+
+  "welcome": "👋 Welcome, {name}! Choose an option:",
+  "access_denied": "🚫 Access denied. You are not authorised to use this bot.",
+  "feature_denied": "🚫 You do not have permission to use this feature.",
+  "unknown_command": "❓ Unknown input. Please use the buttons.",
+  "error_generic": "⚠️ Something went wrong. Please try again.",
+
+  "btn_create_folder":   "📁 Create Folder",
+  "btn_continue_folder": "📂 Continue Folder",
+  "btn_send_receipts":   "📤 Send Receipts",
+  "btn_accounting":      "📊 Accounting",
+  "btn_admin_panel":     "👤 Admins",
+  "btn_back":            "🔙 Back",
+  "btn_cancel":          "❌ Cancel",
+
+
+  "ask_folder_name":  "Enter a name for the new folder:",
+  "folder_created":   "✅ Folder *{name}* created. Starting receipt collection...",
+  "folder_exists":    "⚠️ A folder with that name already exists. Please choose another name.",
+  "no_folders":       "📭 No folders found. Create one first.",
+  "select_folder":    "📁 Select a folder:",
+  "folder_resumed":   "📂 Resumed folder *{name}*. Continue adding receipts.",
+
+  "step1": "📝 *Step 1/7* — Enter Customer Name, @username, or Telegram ID:\n_(e.g. Ali Jahani   or   @username   or   123456789)_",
+  "step2": "💰 *Step 2/7* — Enter Payment Amount _(numeric only)_:",
+  "step3": "📦 *Step 3/7* — Enter Account Volume in GB _(numeric only)_:",
+  "step4": "🕐 *Step 4/7* — Enter Payment Time _(HH:MM — e.g. 14:35)_:",
+  "step5": "🙋 *Step 5/7* — Select the Admin who handled this sale:",
+  "step6": "🧾 *Step 6/7* — Send the receipt _(image or text)_:",
+  "step7": "✅ *Step 7/7* — Please confirm the receipt details:",
+
+  "summary_customer": "👤 Customer",
+  "summary_amount":   "💰 Amount",
+  "summary_volume":   "📦 Volume",
+  "summary_time":     "🕐 Time",
+  "summary_admin":    "🙋 Admin",
+  "summary_receipt":  "🧾 Receipt",
+  "receipt_image":    "[Image]",
+
+  "btn_confirm": "✅ Confirm",
+  "btn_edit":    "✏️ Edit",
+
+  "receipt_saved":          "✅ Receipt saved!",
+  "ask_continue_or_finish": "What would you like to do next?",
+  "btn_add_another":        "➕ Add Another Receipt",
+  "btn_finish":             "🏁 Finish",
+  "session_finished":       "📁 Session saved. Resume anytime via *Continue Folder*.",
+
+  "invalid_amount":  "⚠️ Invalid amount. Please enter a number (e.g. 500000).",
+  "invalid_volume":  "⚠️ Invalid volume. Please enter a number (e.g. 120).",
+  "invalid_time":    "⚠️ Invalid time format. Use HH:MM (e.g. 14:35).",
+  "admin_only_buttons": "⚠️ Please select an admin using the buttons above.",
+
+  "edit_pick_field":   "✏️ Which field would you like to edit?",
+  "btn_f_customer":    "👤 Customer",
+  "btn_f_amount":      "💰 Amount",
+  "btn_f_volume":      "📦 Volume",
+  "btn_f_time":        "🕐 Time",
+  "btn_f_admin":       "🙋 Admin",
+  "btn_f_receipt":     "🧾 Receipt",
+
+  "send_mode_prompt":    "Choose output mode:",
+  "btn_send_time_only":  "🕐 Send Only (Time)",
+  "btn_send_full_report":"📋 Send Full Report",
+  "send_done":           "✅ Receipts sent. Press Back to return to the menu.",
+  "no_receipts":         "📭 No receipts in this folder.",
+  "receipt_header":      "📋 *{folder}* — Receipt #{index}",
+
+  "accounting_options":  "📊 Choose accounting view:",
+  "btn_total_volume":    "📦 Total Volume (GB)",
+  "btn_total_amount":    "💰 Total Payment Amount",
+  "accounting_volume":   "📦 Total Volume Sold: *{volume} GB*",
+  "accounting_amount":   "💰 Total Payment Amount: *{amount}*",
+
+  "admin_panel_pick_admin":  "👤 Select an admin:",
+  "admin_panel_pick_folder": "📁 Select a folder for *{admin}*:",
+  "admin_panel_result":      "🙋 *{admin}* sold *{volume} GB* in folder *{folder}* ({count} receipts)."
+}
