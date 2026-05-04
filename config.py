@@ -4,7 +4,7 @@
 # Add every authorized user here. Anyone not listed is BLOCKED entirely.
 # =============================================================================
 
-TOKEN = "8746102400:AAHs01F6zGs8Pdo4POeDGYPbIMMC9gR2dZs"
+TOKEN = "token"
 
 # ---------------------------------------------------------------------------
 # USER_PERMISSIONS
