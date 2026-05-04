@@ -19,8 +19,8 @@ TOKEN = "8746102400:AAHs01F6zGs8Pdo4POeDGYPbIMMC9gR2dZs"
 #   admin_panel     – can view per-admin sales reports
 # ---------------------------------------------------------------------------
 USER_PERMISSIONS: dict = {
-    507656596: {
-        "name": "hadi",
+    333333333: {
+        "name": "Admin1!",
         "language": "fa",       # "fa" | "en"  (default language)
         "features": {
             "create_folder":   True,
@@ -30,8 +30,8 @@ USER_PERMISSIONS: dict = {
             "admin_panel":     True,
         },
     },
-    94732600: {
-        "name": "amir arab",
+    333333333: {
+        "name": "Admin2!",
         "language": "en",
         "features": {
             "create_folder":   True,
