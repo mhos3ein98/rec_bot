@@ -1,0 +1,307 @@
+2026-05-03 18:40:35,259 [INFO] __main__: Bot is starting…
+2026-05-03 18:40:37,570 [INFO] aiogram.dispatcher: Start polling
+2026-05-03 18:40:38,175 [INFO] aiogram.dispatcher: Run polling for bot @receipt_phantoom_bot id=8746102400 - 'رسید'
+2026-05-03 18:40:55,608 [INFO] aiogram.event: Update id=894539716 is handled. Duration 1402 ms by bot id=8746102400
+2026-05-03 18:40:58,889 [INFO] aiogram.event: Update id=894539717 is handled. Duration 1031 ms by bot id=8746102400
+2026-05-03 18:41:07,266 [INFO] aiogram.event: Update id=894539718 is handled. Duration 1881 ms by bot id=8746102400
+2026-05-03 18:41:13,623 [INFO] aiogram.event: Update id=894539719 is handled. Duration 2475 ms by bot id=8746102400
+2026-05-03 18:41:35,677 [INFO] aiogram.event: Update id=894539720 is not handled. Duration 1 ms by bot id=8746102400
+2026-05-03 18:41:35,677 [ERROR] aiogram.event: Cause exception while process update id=894539720 by bot id=8746102400
+AttributeError: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/hossein/rec_bot/handlers.py", line 475, in s1_customer
+    await state.update_data(customer=msg.text.strip())
+AttributeError: 'NoneType' object has no attribute 'strip'
+2026-05-03 18:41:46,059 [INFO] aiogram.event: Update id=894539721 is handled. Duration 3539 ms by bot id=8746102400
+2026-05-03 18:41:48,129 [INFO] aiogram.event: Update id=894539722 is handled. Duration 329 ms by bot id=8746102400
+2026-05-03 18:41:51,230 [INFO] aiogram.event: Update id=894539723 is handled. Duration 911 ms by bot id=8746102400
+2026-05-03 18:41:56,030 [INFO] aiogram.event: Update id=894539724 is handled. Duration 1014 ms by bot id=8746102400
+2026-05-03 18:42:00,850 [INFO] aiogram.event: Update id=894539725 is handled. Duration 3065 ms by bot id=8746102400
+2026-05-03 18:42:02,530 [INFO] aiogram.event: Update id=894539726 is handled. Duration 358 ms by bot id=8746102400
+2026-05-03 18:42:10,923 [INFO] aiogram.event: Update id=894539727 is handled. Duration 5431 ms by bot id=8746102400
+2026-05-03 18:42:13,541 [INFO] aiogram.event: Update id=894539729 is handled. Duration 726 ms by bot id=8746102400
+2026-05-03 18:42:14,193 [INFO] aiogram.event: Update id=894539728 is not handled. Duration 4632 ms by bot id=8746102400
+2026-05-03 18:42:14,193 [ERROR] aiogram.event: Cause exception while process update id=894539728 by bot id=8746102400
+TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+Traceback (most recent call last):
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+  File "/Users/hossein/rec_bot/handlers.py", line 595, in cb_confirm_yes
+    await cb.message.edit_text(t(lang, "receipt_saved"))
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/methods/base.py", line 84, in emit
+    return await bot(self)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/client/bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/client/session/base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/client/session/aiohttp.py", line 189, in make_request
+    response = self.check_response(
+  File "/Users/hossein/miniconda3/envs/py/lib/python3.10/site-packages/aiogram/client/session/base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2026-05-03 18:42:19,787 [INFO] aiogram.event: Update id=894539730 is handled. Duration 404 ms by bot id=8746102400
+2026-05-03 18:42:24,671 [INFO] aiogram.event: Update id=894539731 is handled. Duration 345 ms by bot id=8746102400
+2026-05-03 18:42:36,099 [INFO] aiogram.event: Update id=894539732 is handled. Duration 334 ms by bot id=8746102400
+2026-05-03 18:42:40,657 [INFO] aiogram.event: Update id=894539733 is handled. Duration 393 ms by bot id=8746102400
+2026-05-03 18:42:56,968 [INFO] aiogram.event: Update id=894539734 is handled. Duration 1080 ms by bot id=8746102400
+2026-05-03 18:42:59,520 [INFO] aiogram.event: Update id=894539735 is handled. Duration 692 ms by bot id=8746102400
+2026-05-03 18:43:02,077 [INFO] aiogram.event: Update id=894539736 is handled. Duration 1124 ms by bot id=8746102400
+2026-05-03 18:43:06,175 [INFO] aiogram.event: Update id=894539737 is handled. Duration 523 ms by bot id=8746102400
+2026-05-03 18:43:10,782 [INFO] aiogram.event: Update id=894539738 is handled. Duration 410 ms by bot id=8746102400
+2026-05-03 18:43:13,061 [INFO] aiogram.event: Update id=894539739 is handled. Duration 347 ms by bot id=8746102400
+2026-05-03 18:43:17,786 [INFO] aiogram.event: Update id=894539740 is handled. Duration 340 ms by bot id=8746102400
+2026-05-03 18:43:21,636 [INFO] aiogram.event: Update id=894539741 is handled. Duration 782 ms by bot id=8746102400
+2026-05-03 18:43:27,577 [INFO] aiogram.event: Update id=894539742 is handled. Duration 384 ms by bot id=8746102400
+2026-05-03 18:43:34,948 [INFO] aiogram.event: Update id=894539743 is handled. Duration 988 ms by bot id=8746102400
+2026-05-03 18:43:37,157 [INFO] aiogram.event: Update id=894539744 is handled. Duration 774 ms by bot id=8746102400
+2026-05-03 18:43:40,991 [INFO] aiogram.event: Update id=894539745 is handled. Duration 333 ms by bot id=8746102400
+2026-05-03 18:43:45,190 [INFO] aiogram.event: Update id=894539746 is handled. Duration 402 ms by bot id=8746102400
+2026-05-03 18:43:48,981 [INFO] aiogram.event: Update id=894539747 is handled. Duration 329 ms by bot id=8746102400
+2026-05-03 18:43:56,759 [INFO] aiogram.event: Update id=894539748 is handled. Duration 396 ms by bot id=8746102400
+2026-05-03 18:44:03,379 [INFO] aiogram.event: Update id=894539749 is handled. Duration 379 ms by bot id=8746102400
+2026-05-03 18:44:06,790 [INFO] aiogram.event: Update id=894539750 is handled. Duration 899 ms by bot id=8746102400
+2026-05-03 18:44:30,126 [INFO] aiogram.event: Update id=894539751 is handled. Duration 1017 ms by bot id=8746102400
+2026-05-03 18:44:34,763 [INFO] aiogram.event: Update id=894539752 is handled. Duration 2237 ms by bot id=8746102400
+2026-05-03 18:44:39,395 [INFO] aiogram.event: Update id=894539753 is handled. Duration 1053 ms by bot id=8746102400
+2026-05-03 18:44:43,658 [INFO] aiogram.event: Update id=894539754 is handled. Duration 900 ms by bot id=8746102400
+2026-05-03 18:44:45,959 [INFO] aiogram.event: Update id=894539755 is handled. Duration 892 ms by bot id=8746102400
+2026-05-03 18:44:54,769 [INFO] aiogram.event: Update id=894539756 is handled. Duration 4621 ms by bot id=8746102400
+2026-05-03 18:45:55,646 [INFO] aiogram.event: Update id=894539757 is handled. Duration 2778 ms by bot id=8746102400
+2026-05-03 18:46:08,274 [INFO] aiogram.event: Update id=894539758 is handled. Duration 1054 ms by bot id=8746102400
+2026-05-03 18:48:33,078 [INFO] aiogram.event: Update id=894539759 is handled. Duration 1910 ms by bot id=8746102400
+2026-05-03 18:48:44,608 [INFO] aiogram.event: Update id=894539761 is not handled. Duration 5 ms by bot id=8746102400
+2026-05-03 18:48:45,028 [INFO] aiogram.event: Update id=894539760 is handled. Duration 743 ms by bot id=8746102400
+2026-05-03 18:48:46,951 [INFO] aiogram.event: Update id=894539762 is handled. Duration 740 ms by bot id=8746102400
+2026-05-03 18:48:50,238 [INFO] aiogram.event: Update id=894539763 is handled. Duration 1240 ms by bot id=8746102400
+2026-05-03 18:48:58,840 [INFO] aiogram.event: Update id=894539764 is handled. Duration 768 ms by bot id=8746102400
+2026-05-03 18:49:01,361 [INFO] aiogram.event: Update id=894539765 is handled. Duration 872 ms by bot id=8746102400
+2026-05-03 18:49:04,255 [INFO] aiogram.event: Update id=894539766 is handled. Duration 1001 ms by bot id=8746102400
+2026-05-03 18:49:31,165 [INFO] aiogram.event: Update id=894539767 is handled. Duration 1467 ms by bot id=8746102400
+2026-05-03 18:49:33,453 [INFO] aiogram.event: Update id=894539768 is handled. Duration 761 ms by bot id=8746102400
+2026-05-03 18:49:36,015 [INFO] aiogram.event: Update id=894539769 is handled. Duration 1232 ms by bot id=8746102400
+2026-05-03 18:55:41,802 [INFO] aiogram.event: Update id=894539770 is handled. Duration 987 ms by bot id=8746102400
+2026-05-03 18:55:44,247 [INFO] aiogram.event: Update id=894539771 is handled. Duration 705 ms by bot id=8746102400
+2026-05-03 18:55:48,955 [INFO] aiogram.event: Update id=894539772 is handled. Duration 722 ms by bot id=8746102400
+2026-05-03 18:55:54,916 [INFO] aiogram.event: Update id=894539773 is not handled. Duration 4 ms by bot id=8746102400
+2026-05-03 18:56:03,601 [INFO] aiogram.event: Update id=894539774 is handled. Duration 398 ms by bot id=8746102400
+2026-05-03 23:05:53,315 [INFO] __main__: Bot is starting…
+2026-05-03 23:05:54,515 [INFO] aiogram.dispatcher: Start polling
+2026-05-03 23:05:54,803 [INFO] aiogram.dispatcher: Run polling for bot @receipt_phantoom_bot id=8746102400 - 'رسید'
+2026-05-03 23:06:13,365 [INFO] aiogram.event: Update id=894539775 is handled. Duration 1597 ms by bot id=8746102400
+2026-05-03 23:06:20,323 [INFO] aiogram.event: Update id=894539776 is handled. Duration 1946 ms by bot id=8746102400
+2026-05-03 23:06:23,231 [INFO] aiogram.event: Update id=894539777 is handled. Duration 981 ms by bot id=8746102400
+2026-05-03 23:06:30,476 [INFO] aiogram.event: Update id=894539778 is handled. Duration 941 ms by bot id=8746102400
+2026-05-03 23:06:34,610 [INFO] aiogram.event: Update id=894539779 is handled. Duration 334 ms by bot id=8746102400
+2026-05-03 23:06:37,458 [INFO] aiogram.event: Update id=894539780 is handled. Duration 330 ms by bot id=8746102400
+2026-05-03 23:06:42,358 [INFO] aiogram.event: Update id=894539781 is handled. Duration 343 ms by bot id=8746102400
+2026-05-03 23:06:45,710 [INFO] aiogram.event: Update id=894539782 is handled. Duration 715 ms by bot id=8746102400
+2026-05-03 23:06:49,589 [INFO] aiogram.event: Update id=894539783 is handled. Duration 408 ms by bot id=8746102400
+2026-05-03 23:07:02,196 [INFO] aiogram.event: Update id=894539784 is handled. Duration 1227 ms by bot id=8746102400
+2026-05-03 23:07:05,839 [INFO] aiogram.event: Update id=894539785 is handled. Duration 652 ms by bot id=8746102400
+2026-05-03 23:07:09,908 [INFO] aiogram.event: Update id=894539786 is handled. Duration 1172 ms by bot id=8746102400
+2026-05-03 23:07:21,750 [INFO] aiogram.event: Update id=894539787 is handled. Duration 810 ms by bot id=8746102400
+2026-05-03 23:07:25,326 [INFO] aiogram.event: Update id=894539788 is handled. Duration 936 ms by bot id=8746102400
+2026-05-03 23:07:29,332 [INFO] aiogram.event: Update id=894539789 is handled. Duration 2055 ms by bot id=8746102400
+2026-05-03 23:07:33,409 [INFO] aiogram.event: Update id=894539790 is handled. Duration 2984 ms by bot id=8746102400
+2026-05-03 23:07:34,142 [INFO] aiogram.event: Update id=894539791 is handled. Duration 1334 ms by bot id=8746102400
+2026-05-03 23:07:36,398 [INFO] aiogram.event: Update id=894539792 is handled. Duration 741 ms by bot id=8746102400
+2026-05-03 23:07:41,969 [INFO] aiogram.event: Update id=894539793 is handled. Duration 4148 ms by bot id=8746102400
+2026-05-03 23:07:46,517 [INFO] aiogram.event: Update id=894539794 is handled. Duration 624 ms by bot id=8746102400
+2026-05-03 23:07:50,310 [INFO] aiogram.event: Update id=894539795 is handled. Duration 610 ms by bot id=8746102400
+2026-05-03 23:07:53,286 [INFO] aiogram.event: Update id=894539796 is handled. Duration 630 ms by bot id=8746102400
+2026-05-03 23:07:55,534 [INFO] aiogram.event: Update id=894539797 is handled. Duration 778 ms by bot id=8746102400
+2026-05-03 23:07:58,251 [INFO] aiogram.event: Update id=894539798 is handled. Duration 740 ms by bot id=8746102400
+2026-05-03 23:08:20,725 [INFO] aiogram.event: Update id=894539799 is handled. Duration 1036 ms by bot id=8746102400
+2026-05-03 23:08:53,339 [INFO] __main__: Bot is starting…
+2026-05-03 23:08:55,859 [INFO] aiogram.dispatcher: Start polling
+2026-05-03 23:08:56,162 [INFO] aiogram.dispatcher: Run polling for bot @receipt_phantoom_bot id=8746102400 - 'رسید'
+2026-05-03 23:10:21,769 [INFO] aiogram.event: Update id=894539800 is handled. Duration 1132 ms by bot id=8746102400
+2026-05-03 23:16:27,123 [INFO] __main__: Bot is starting…
+2026-05-03 23:16:28,216 [INFO] aiogram.dispatcher: Start polling
+2026-05-03 23:16:28,495 [INFO] aiogram.dispatcher: Run polling for bot @receipt_phantoom_bot id=8746102400 - 'رسید'
+2026-05-03 23:16:57,156 [INFO] aiogram.event: Update id=894539801 is handled. Duration 1122 ms by bot id=8746102400
+2026-05-03 23:18:52,037 [INFO] __main__: Bot is starting…
+2026-05-03 23:18:53,135 [INFO] aiogram.dispatcher: Start polling
+2026-05-03 23:18:53,548 [INFO] aiogram.dispatcher: Run polling for bot @receipt_phantoom_bot id=8746102400 - 'رسید'
+2026-05-03 23:19:02,124 [INFO] aiogram.event: Update id=894539802 is handled. Duration 3098 ms by bot id=8746102400
+2026-05-03 23:24:04,789 [INFO] __main__: Bot starting...
+2026-05-03 23:24:06,291 [INFO] __main__: Native Telegram menu button reset to default (hidden).
+2026-05-03 23:24:06,292 [INFO] aiogram.dispatcher: Start polling
+2026-05-03 23:24:06,576 [INFO] aiogram.dispatcher: Run polling for bot @receipt_phantoom_bot id=8746102400 - 'رسید'
+2026-05-03 23:24:15,039 [INFO] aiogram.event: Update id=894539803 is handled. Duration 1077 ms by bot id=8746102400
+2026-05-03 23:24:18,568 [INFO] aiogram.event: Update id=894539804 is handled. Duration 629 ms by bot id=8746102400
+2026-05-03 23:24:23,109 [INFO] aiogram.event: Update id=894539805 is handled. Duration 802 ms by bot id=8746102400
+2026-05-03 23:27:55,762 [INFO] __main__: Bot starting...
+2026-05-03 23:27:57,306 [INFO] __main__: Native Telegram menu button reset to default (hidden).
+2026-05-03 23:27:57,307 [INFO] aiogram.dispatcher: Start polling
+2026-05-03 23:27:57,618 [INFO] aiogram.dispatcher: Run polling for bot @receipt_phantoom_bot id=8746102400 - 'رسید'
+2026-05-03 23:28:08,386 [INFO] aiogram.event: Update id=894539806 is handled. Duration 1080 ms by bot id=8746102400
+2026-05-03 23:39:18,270 [INFO] __main__: Bot starting...
+2026-05-03 23:39:21,857 [INFO] __main__: Native Telegram menu button reset to default (hidden).
+2026-05-03 23:39:21,858 [INFO] aiogram.dispatcher: Start polling
+2026-05-03 23:39:22,170 [INFO] aiogram.dispatcher: Run polling for bot @receipt_phantoom_bot id=8746102400 - 'رسید'
+2026-05-03 23:39:33,932 [INFO] aiogram.event: Update id=894539807 is handled. Duration 2516 ms by bot id=8746102400
+2026-05-03 23:39:38,256 [INFO] aiogram.event: Update id=894539808 is handled. Duration 752 ms by bot id=8746102400
+2026-05-03 23:43:55,817 [ERROR] aiogram.dispatcher: Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-05-03 23:43:55,819 [WARNING] aiogram.dispatcher: Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8746102400)
+2026-05-03 23:44:08,704 [INFO] aiogram.dispatcher: Connection established (tryings = 1, bot id = 8746102400)
+2026-05-03 23:50:39,344 [INFO] __main__: Bot starting...
+2026-05-03 23:50:41,794 [INFO] __main__: Native Telegram menu button and commands configured.
+2026-05-03 23:50:41,794 [INFO] aiogram.dispatcher: Start polling
+2026-05-03 23:50:42,085 [INFO] aiogram.dispatcher: Run polling for bot @receipt_phantoom_bot id=8746102400 - 'رسید'
+2026-05-03 23:51:00,701 [INFO] aiogram.event: Update id=894539810 is handled. Duration 1073 ms by bot id=8746102400
+2026-05-03 23:51:04,595 [INFO] aiogram.event: Update id=894539811 is handled. Duration 328 ms by bot id=8746102400
+2026-05-03 23:51:11,862 [INFO] aiogram.event: Update id=894539812 is handled. Duration 322 ms by bot id=8746102400
+2026-05-03 23:51:13,129 [INFO] aiogram.event: Update id=894539809 is handled. Duration 19889 ms by bot id=8746102400
+2026-05-03 23:51:19,640 [INFO] aiogram.event: Update id=894539813 is handled. Duration 499 ms by bot id=8746102400
+2026-05-03 23:51:23,067 [INFO] aiogram.event: Update id=894539814 is handled. Duration 722 ms by bot id=8746102400
+2026-05-03 23:51:28,963 [INFO] aiogram.event: Update id=894539815 is handled. Duration 1279 ms by bot id=8746102400
+2026-05-03 23:51:32,357 [INFO] aiogram.event: Update id=894539816 is not handled. Duration 4 ms by bot id=8746102400
+2026-05-03 23:51:36,284 [INFO] aiogram.event: Update id=894539817 is not handled. Duration 3 ms by bot id=8746102400
+2026-05-03 23:51:44,093 [INFO] aiogram.event: Update id=894539818 is not handled. Duration 3 ms by bot id=8746102400
+2026-05-03 23:52:01,735 [INFO] aiogram.event: Update id=894539819 is handled. Duration 11008 ms by bot id=8746102400
+2026-05-04 00:00:10,052 [ERROR] aiogram.dispatcher: Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-04 00:00:10,053 [WARNING] aiogram.dispatcher: Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8746102400)
+2026-05-04 00:00:22,922 [INFO] aiogram.dispatcher: Connection established (tryings = 1, bot id = 8746102400)
+2026-05-04 00:01:06,740 [INFO] __main__: Bot starting...
+2026-05-04 00:01:10,942 [INFO] __main__: Native Telegram menu button and commands configured.
+2026-05-04 00:01:10,943 [INFO] aiogram.dispatcher: Start polling
+2026-05-04 00:01:11,715 [INFO] aiogram.dispatcher: Run polling for bot @receipt_phantoom_bot id=8746102400 - 'رسید'
+2026-05-04 00:01:20,239 [INFO] aiogram.event: Update id=894539820 is handled. Duration 1526 ms by bot id=8746102400
+2026-05-04 00:01:22,952 [INFO] aiogram.event: Update id=894539821 is handled. Duration 333 ms by bot id=8746102400
+2026-05-04 00:01:25,401 [INFO] aiogram.event: Update id=894539822 is handled. Duration 640 ms by bot id=8746102400
+2026-05-04 00:01:27,597 [INFO] aiogram.event: Update id=894539823 is not handled. Duration 4 ms by bot id=8746102400
+2026-05-04 00:01:39,412 [INFO] aiogram.event: Update id=894539824 is handled. Duration 716 ms by bot id=8746102400
+2026-05-04 00:02:39,724 [INFO] aiogram.event: Update id=894539825 is handled. Duration 1833 ms by bot id=8746102400
+2026-05-04 00:02:43,310 [INFO] aiogram.event: Update id=894539826 is handled. Duration 391 ms by bot id=8746102400
+2026-05-04 00:02:46,937 [INFO] aiogram.event: Update id=894539827 is handled. Duration 1833 ms by bot id=8746102400
+2026-05-04 00:02:49,966 [INFO] aiogram.event: Update id=894539828 is handled. Duration 1297 ms by bot id=8746102400
+2026-05-04 00:02:55,701 [INFO] aiogram.event: Update id=894539829 is handled. Duration 2427 ms by bot id=8746102400
+2026-05-04 00:02:58,260 [INFO] aiogram.event: Update id=894539830 is handled. Duration 2918 ms by bot id=8746102400
+2026-05-04 00:03:01,023 [INFO] aiogram.event: Update id=894539831 is handled. Duration 1629 ms by bot id=8746102400
+2026-05-04 00:03:09,738 [INFO] aiogram.event: Update id=894539832 is handled. Duration 929 ms by bot id=8746102400
+2026-05-04 00:03:13,924 [INFO] aiogram.event: Update id=894539833 is handled. Duration 1839 ms by bot id=8746102400
+2026-05-04 00:03:21,402 [INFO] aiogram.event: Update id=894539834 is handled. Duration 5956 ms by bot id=8746102400
+2026-05-04 00:03:24,751 [INFO] aiogram.event: Update id=894539835 is handled. Duration 387 ms by bot id=8746102400
+2026-05-04 00:03:28,678 [INFO] aiogram.event: Update id=894539836 is handled. Duration 1232 ms by bot id=8746102400
+2026-05-04 00:03:34,162 [INFO] aiogram.event: Update id=894539837 is handled. Duration 1700 ms by bot id=8746102400
+2026-05-04 00:03:42,084 [INFO] aiogram.event: Update id=894539838 is handled. Duration 3469 ms by bot id=8746102400
+2026-05-04 00:03:46,181 [INFO] aiogram.event: Update id=894539839 is handled. Duration 408 ms by bot id=8746102400
+2026-05-04 00:03:49,458 [INFO] aiogram.event: Update id=894539840 is handled. Duration 1275 ms by bot id=8746102400
+2026-05-04 00:03:51,790 [INFO] aiogram.event: Update id=894539841 is handled. Duration 1201 ms by bot id=8746102400
+2026-05-04 00:03:55,734 [INFO] aiogram.event: Update id=894539842 is handled. Duration 995 ms by bot id=8746102400
+2026-05-04 00:04:32,876 [INFO] aiogram.event: Update id=894539843 is handled. Duration 1241 ms by bot id=8746102400
+2026-05-04 00:04:35,817 [INFO] aiogram.event: Update id=894539844 is handled. Duration 1196 ms by bot id=8746102400
+2026-05-04 00:04:38,833 [INFO] aiogram.event: Update id=894539845 is handled. Duration 1039 ms by bot id=8746102400
+2026-05-04 00:04:42,447 [INFO] aiogram.event: Update id=894539846 is handled. Duration 1245 ms by bot id=8746102400
+2026-05-04 00:05:03,914 [INFO] aiogram.event: Update id=894539847 is handled. Duration 979 ms by bot id=8746102400
+2026-05-04 00:05:12,068 [INFO] aiogram.event: Update id=894539848 is handled. Duration 773 ms by bot id=8746102400
+2026-05-04 00:05:14,470 [INFO] aiogram.event: Update id=894539849 is handled. Duration 463 ms by bot id=8746102400
+2026-05-04 00:05:18,553 [INFO] aiogram.event: Update id=894539850 is handled. Duration 1415 ms by bot id=8746102400
+2026-05-04 00:05:23,487 [INFO] aiogram.event: Update id=894539851 is handled. Duration 367 ms by bot id=8746102400
+2026-05-04 00:05:26,943 [INFO] aiogram.event: Update id=894539852 is handled. Duration 1115 ms by bot id=8746102400
+2026-05-04 00:05:30,195 [INFO] aiogram.event: Update id=894539853 is handled. Duration 1121 ms by bot id=8746102400
+2026-05-04 00:05:38,549 [INFO] aiogram.event: Update id=894539854 is handled. Duration 438 ms by bot id=8746102400
+2026-05-04 00:05:43,944 [INFO] aiogram.event: Update id=894539855 is handled. Duration 392 ms by bot id=8746102400
+2026-05-04 00:05:47,802 [INFO] aiogram.event: Update id=894539856 is handled. Duration 1087 ms by bot id=8746102400
+2026-05-04 00:24:36,844 [ERROR] aiogram.dispatcher: Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-04 00:24:36,844 [WARNING] aiogram.dispatcher: Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8746102400)
+2026-05-04 00:24:49,606 [INFO] aiogram.dispatcher: Connection established (tryings = 1, bot id = 8746102400)
+2026-05-04 00:26:24,454 [INFO] __main__: Bot starting...
+2026-05-04 00:26:26,685 [INFO] __main__: Native Telegram menu button and commands configured.
+2026-05-04 00:26:26,686 [INFO] aiogram.dispatcher: Start polling
+2026-05-04 00:26:27,074 [INFO] aiogram.dispatcher: Run polling for bot @receipt_phantoom_bot id=8746102400 - 'رسید'
+2026-05-04 00:26:40,616 [INFO] aiogram.event: Update id=894539857 is handled. Duration 1577 ms by bot id=8746102400
+2026-05-04 00:26:44,139 [INFO] aiogram.event: Update id=894539858 is handled. Duration 939 ms by bot id=8746102400
+2026-05-04 00:26:45,962 [INFO] aiogram.event: Update id=894539859 is handled. Duration 648 ms by bot id=8746102400
+2026-05-04 00:26:48,132 [INFO] aiogram.event: Update id=894539860 is handled. Duration 459 ms by bot id=8746102400
+2026-05-04 00:26:50,223 [INFO] aiogram.event: Update id=894539861 is handled. Duration 637 ms by bot id=8746102400
+2026-05-04 00:26:52,348 [INFO] aiogram.event: Update id=894539862 is handled. Duration 326 ms by bot id=8746102400
+2026-05-04 00:26:56,623 [INFO] aiogram.event: Update id=894539863 is handled. Duration 1259 ms by bot id=8746102400
+2026-05-04 00:26:59,853 [INFO] aiogram.event: Update id=894539864 is handled. Duration 1630 ms by bot id=8746102400
+2026-05-04 00:27:04,061 [INFO] aiogram.event: Update id=894539865 is handled. Duration 1556 ms by bot id=8746102400
+2026-05-04 00:42:23,988 [INFO] __main__: Bot starting...
+2026-05-04 00:42:27,035 [INFO] __main__: Native Telegram menu button and commands configured.
+2026-05-04 00:42:27,035 [INFO] aiogram.dispatcher: Start polling
+2026-05-04 00:42:27,461 [INFO] aiogram.dispatcher: Run polling for bot @receipt_phantoom_bot id=8746102400 - 'رسید'
+2026-05-04 00:42:59,103 [INFO] aiogram.event: Update id=894539868 is handled. Duration 1190 ms by bot id=8746102400
+2026-05-04 00:43:03,869 [INFO] aiogram.event: Update id=894539869 is handled. Duration 1041 ms by bot id=8746102400
+2026-05-04 00:43:08,905 [INFO] aiogram.event: Update id=894539870 is handled. Duration 1121 ms by bot id=8746102400
+2026-05-04 00:43:14,223 [INFO] aiogram.event: Update id=894539871 is handled. Duration 328 ms by bot id=8746102400
+2026-05-04 00:43:21,042 [INFO] aiogram.event: Update id=894539872 is handled. Duration 935 ms by bot id=8746102400
+2026-05-04 00:43:24,131 [INFO] aiogram.event: Update id=894539873 is handled. Duration 1046 ms by bot id=8746102400
+2026-05-04 00:43:26,602 [INFO] aiogram.event: Update id=894539874 is handled. Duration 1082 ms by bot id=8746102400
+2026-05-04 00:45:36,932 [INFO] aiogram.event: Update id=894539875 is handled. Duration 1382 ms by bot id=8746102400
+2026-05-04 00:45:42,290 [INFO] aiogram.event: Update id=894539876 is handled. Duration 2275 ms by bot id=8746102400
+2026-05-04 01:55:10,557 [ERROR] aiogram.dispatcher: Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2026-05-04 01:55:10,558 [WARNING] aiogram.dispatcher: Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8746102400)
+2026-05-04 01:55:23,020 [INFO] aiogram.dispatcher: Connection established (tryings = 1, bot id = 8746102400)
+2026-05-04 02:08:06,405 [ERROR] aiogram.dispatcher: Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2026-05-04 02:08:06,405 [WARNING] aiogram.dispatcher: Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8746102400)
+2026-05-04 02:08:18,822 [INFO] aiogram.dispatcher: Connection established (tryings = 1, bot id = 8746102400)
+2026-05-04 02:14:37,239 [INFO] __main__: Bot starting...
+2026-05-04 02:14:38,973 [INFO] __main__: Native Telegram menu button and commands configured.
+2026-05-04 02:14:38,974 [INFO] aiogram.dispatcher: Start polling
+2026-05-04 02:14:39,271 [INFO] aiogram.dispatcher: Run polling for bot @receipt_phantoom_bot id=8746102400 - 'رسید'
